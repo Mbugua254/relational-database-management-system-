@@ -121,8 +121,8 @@ node server.js
 
 Available endpoints:
 
-- **GET /** â†’ Friendly homepage with usage instructions  
-- **POST /query** â†’ Execute SQL commands  
+- **GET /** - Friendly homepage with usage instructions  
+- **POST /query** - Execute SQL commands  
 
 Example with `curl`:
 
@@ -130,8 +130,8 @@ Example with `curl`:
 curl -X POST http://localhost:3000/query -H "Content-Type: application/json" -d '{"sql": "CREATE TABLE users (id INT PRIMARY KEY, name TEXT, email TEXT UNIQUE)"}'
 ```
 
-- **GET /tables** â†’ List all tables  
-- **GET /tables/:name** â†’ List all rows in a table
+- **GET /tables** - List all tables  
+- **GET /tables/:name** - List all rows in a table
 
 ---
 
