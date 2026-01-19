@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node repl/repl.js",
-  "dev": "nodemon repl/repl.js",
-  "test": "jest"
-},
+    "start": "node repl/repl.js",
+    "dev": "nodemon repl/repl.js",
+    "test": "jest"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.5",
     "express": "^5.2.1"
   },
   "devDependencies": {
