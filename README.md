@@ -1,7 +1,5 @@
 
-# miniSQL â€“ In-Memory Relational Database Management System
-
-![miniSQL](https://img.shields.io/badge/status-Prototype-green)
+# miniSQL In-Memory Relational Database Management System
 
 miniSQL is a **simple, in-memory relational database management system (RDBMS)** built in Node.js. It supports:
 
@@ -11,7 +9,7 @@ miniSQL is a **simple, in-memory relational database management system (RDBMS)**
 - An interactive REPL interface
 - A RESTful web server for executing SQL queries via HTTP
 
-> âš ï¸ **Note:** Data is stored in memory. Restarting the server or REPL will reset all tables and rows.
+> **Note:** Data is stored in memory. Restarting the server or REPL will reset all tables and rows.
 
 ---
 
@@ -46,24 +44,24 @@ miniSQL is a **simple, in-memory relational database management system (RDBMS)**
 ## Project Structure
 
 ```
-miniSQL/
-â”‚
-â”œâ”€ db/
-â”‚  â”œâ”€ Database.js      # Manages tables and executes commands
-â”‚  â”œâ”€ Table.js         # Handles rows, CRUD, primary/unique keys
-â”‚  â”œâ”€ Parser.js        # SQL parser for supported commands
-â”‚  â”œâ”€ Executor.js      # Placeholder for future execution logic
-â”‚  â””â”€ Index.js         # Placeholder for future indexing features
-â”‚
-â”œâ”€ tests/
-â”‚  â”œâ”€ parser.test.js
-â”‚  â”œâ”€ database.test.js
-â”‚  â””â”€ join.test.js
-â”‚
-â”œâ”€ repl.js             # Interactive miniSQL REPL
-â”œâ”€ server.js           # Express web server exposing SQL API
-â”œâ”€ package.json
-â””â”€ README.md
+relational-database-management-system/
+│
+├─ db/
+│ ├─ Database.js # Manages tables and executes commands
+│ ├─ Table.js # Handles rows, CRUD, primary/unique keys
+│ ├─ Parser.js # SQL parser for supported commands
+│ ├─ Executor.js # Placeholder for future execution logic
+│ └─ Index.js # Placeholder for future indexing features
+│
+├─ tests/
+│ ├─ parser.test.js
+│ ├─ database.test.js
+│ └─ join.test.js
+│
+├─ repl.js # Interactive miniSQL REPL
+├─ server.js # Express web server exposing SQL API
+├─ package.json
+└─ README.md
 ```
 
 ---
